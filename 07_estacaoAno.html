@@ -6,10 +6,100 @@
     */
 
     //ENTRADA
+    const hemisfério = prompt('informe em que hemisferio voce esta').toLowerCase().trim()
+    const mes = prompt('informe em que mes nos estamos').toLowerCase().trim()
 
-    
     //PROCESSAMENTO
+    switch (hemisfério) {
+        case "norte":
+            switch (mes) {
+                case "janeiro":
+                    alert('estamos no inverno')
+                    break;
+                case "fevereiro":
+                    alert("estamos no inverno")
+                    break;
+                case "março":
+                    alert('estamos no inverno')
+                    break;
+                case "abril":
+                    alert('estamos na primavera')
+                    break;
+                case "maio":
+                    alert('estamos na primavera')
+                    break;
+                case "junho":
+                    alert('estamos na primavera')
+                    break;
+                case "julho":
+                    alert('estamos no verão')
+                    break;
+                case "agosto":
+                    alert('estamos no verão')
+                    break;
+                case "setembro":
+                    alert('estamos no verão')
+                    break;
+                case "outubro":
+                    alert('estamos no outono')
+                    break;
+                case "novembro":
+                    alert('estamos no outono')
+                    break;
+                case "dezembro":
+                    alert('estamos no outono')
+                    break;
+                default:
+                    alert('valor invalido')
+                    break;
 
+            }
+    }
+    switch (hemisfério) {
+        case "sul":
+            switch (mes) {
+                case "janeiro":
+                    alert('estamos no verão')
+                    break;
+                case "fevereiro":
+                    alert("estamos no verão")
+                    break;
+                case "março":
+                    alert('estamos no verão')
+                    break;
+                case "abril":
+                    alert('estamos no outono')
+                    break;
+                case "maio":
+                    alert('estamos no outono')
+                    break;
+                case "junho":
+                    alert('estamos no outono')
+                    break;
+                case "julho":
+                    alert('estamos no inverno')
+                    break;
+                case "agosto":
+                    alert('estamos no inverno')
+                    break;
+                case "setembro":
+                    alert('estamos no inverno')
+                    break;
+                case "outubro":
+                    alert('estamos na primavera')
+                    break;
+                case "novembro":
+                    alert('estamos na primavera')
+                    break;
+                case "dezembro":
+                    alert('estamos na primvaera')
+                    break;
+                default:
+                    alert('valor invalido')
+                    break;
+
+            }
+    }
 
     //SAÍDA
 

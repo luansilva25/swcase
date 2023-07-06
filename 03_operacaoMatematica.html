@@ -11,16 +11,54 @@
 const numero1= Number(prompt('informe numero'))
 const numero2= Number (prompt('informe outro numero'))
 const operacao= prompt('informe a operação que deseja realizar (+, -, *, /)')
-const soma= numero1 + numero2
-const sub= numero1 - numero2
-const multi= numero1 * numero2
-const div = numero1 / numero2
     //PROCESSAMENTO
-switch(operacao == "+"){
+    let resul = 0
+    let mensagem = ``
+switch(operacao){
+    case "+":
+        resul = numero1 + numero2
+        break;
+
     
+    case "-":
+        resul = numero1 - numero2
+        break;
+    
+    case "*":
+        resul = numero1 * numero2
+        break;
+
+    case "/":
+        resul= numero1 / numero2
+        break;
+            }
+
+    switch(Number.isInteger(resul)){
+        case true:
+            mensagem = mensagem + `O número é inteiro, `
+            break;
+        case false:
+            mensagem = mensagem + `O numero é decimal, `
+            break;
+    }
+
+    switch(resul % 2){
+        case 0:
+            mensagem = mensagem + `o numero é par, `
+            break;
+        default:
+            mensagem = mensagem + `o numero é impar, `
+            break;
+    }
+    
+switch(resul > 0){
+    case true:
+        mensagem= mensagem + `ele é positivo`
+        break;
+    case false:
+            mensagem = mensagem + `ele é negativo`
+            break;
 }
-
-    
     //SAÍDA
-
+alert(mensagem)
 </script>

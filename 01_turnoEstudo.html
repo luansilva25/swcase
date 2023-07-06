@@ -12,24 +12,24 @@
     */
 
     //ENTRADA
-    const turno=prompt('informe em que turno voce estuda')
-    
+    const turno = prompt('informe em que turno voce estuda (M-matutino, V-vespertino, N-noturno)').trim().toUpperCase()
+
     //PROCESSAMENTO
-    switch(turno){
+    switch (turno) {
         case "M":
             alert('bom dia')
             break;
-            case "V":
-                alert('boa tarde')
-                break;
-                case "N":
-                    alert('boa noite')
-                    break;
-                    default:
-                        alert('valor invalido')
-                        break;
+        case "V":
+            alert('boa tarde')
+            break;
+        case "N":
+            alert('boa noite')
+            break;
+        default:
+            alert('valor invalido')
+            break;
     }
-    
+
     //SAÍDA
 
 </script>

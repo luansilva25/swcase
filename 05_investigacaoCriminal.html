@@ -13,65 +13,69 @@
     */
 
     //ENTRADA
-const pergunta1= prompt('telefonou para a vitima?')
-const pergunta2= prompt('esteve no local do crime')
-const pergunta3= prompt('mora perto da vitima?')
-const pergunta4= prompt('devia para a vitima?')
-const pergunta5= prompt('ja trabalhou coma vitima?')
-let contador= 0
-    
+    const pergunta1 = prompt('telefonou para a vitima?').toLowerCase().trim()
+    const pergunta2 = prompt('esteve no local do crime').toLowerCase().trim()
+    const pergunta3 = prompt('mora perto da vitima?').toLowerCase().trim()
+    const pergunta4 = prompt('devia para a vitima?').toLowerCase().trim()
+    const pergunta5 = prompt('ja trabalhou coma vitima?').toLowerCase().trim()
+    let contador = 0
+
     //PROCESSAMENTO
-switch(pergunta1){
-    case "n":
-        break;
+    switch (pergunta1) {
+        case "n":
+            break;
         case "s":
-        contador++
-        break;
-        
-}
-switch(pergunta2){
-    case "n":
-        break;
+            contador++
+            break;
+
+    }
+    switch (pergunta2) {
+        case "n":
+            break;
         case "s":
-        contador++
-        break;
-        
-}
-switch(pergunta3){
-    case "n":
-        break;
+            contador++
+            break;
+
+    }
+    switch (pergunta3) {
+        case "n":
+            break;
         case "s":
-        contador++
-        break;
-        
-}
-switch(pergunta4){
-    case "n":
-        break;
+            contador++
+            break;
+
+    }
+    switch (pergunta4) {
+        case "n":
+            break;
         case "s":
-        contador++
-        break;
-        
-}
-switch(pergunta5){
-    case "n":
-        break;
+            contador++
+            break;
+
+    }
+    switch (pergunta5) {
+        case "n":
+            break;
         case "s":
-        contador++
-        break;
-        
-}
-switch(contador){
-    case 2:
-        alert('inocente')
+            contador++
+            break;
+
+    }
+    switch (contador) {
+        case 2:
+            alert('inocente')
+            break;
         case 3:
-            case 4:
-                alert('cumplice')
-                case 5:
-                    alert('assassino')
-                    default:
-                        alert('inocente')
-}
+        case 4:
+            alert('cumplice')
+            break;
+        case 5:
+            alert('assassino')
+            break;
+        default:
+            alert('inocente')
+            break;
+    }
 
 
 

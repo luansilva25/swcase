@@ -8,11 +8,27 @@
     // - cães grandes: fator 7.
 
     // ENTRADA
-
-    
+    const idade = parseInt(prompt('informe a idade do seu cachorro'))
+    const porte = prompt('informe o porte do seu cachorro').toLowerCase().trim()
+    const pequeno = idade * 5
+    const medio = idade * 6
+    const grande = idade * 7
     // PROCESSAMENTO
+    switch (porte) {
+        case "pequeno":
+            alert(`o seu cachorro possui ${pequeno} anos humanos`)
+            break;
+        case "medio":
+            alert(`o seu cachorro ${medio} anos humanos`)
+            break;
+        case "grande":
+            alert(`o seu cachorro possui ${grande} anos humanos`)
+            break;
+        default:
+            alert('valor invalido')
+            break;
+    }
 
-    
     // SAÍDA
 
-    </script>
+</script>
